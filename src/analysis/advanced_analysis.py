@@ -108,6 +108,149 @@ def analyze_patterns(df: pd.DataFrame) -> Dict:
 def save_advanced_analysis_results(results: Dict, output_dir: str) -> None:
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
+    
+    # Sauvegarde des résultats JSON
     with open(output_path / 'advanced_results.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=4, ensure_ascii=False)
-    logger.info(f"Résultats de l'analyse avancée sauvegardés dans {output_dir}") 
+    
+    # Génération des visualisations
+    generate_advanced_visualizations(results, output_path)
+    
+    logger.info(f"Résultats de l'analyse avancée sauvegardés dans {output_dir}")
+
+def generate_advanced_visualizations(results: Dict, output_path: Path) -> None:
+    """
+    Génère les visualisations pour l'analyse avancée.
+    """
+    # Création du répertoire pour les visualisations
+    viz_path = output_path / 'visualizations'
+    viz_path.mkdir(exist_ok=True)
+    
+    # Analyse PCA
+    plot_pca_visualization(results['pca'], viz_path)
+    
+    # Analyse t-SNE
+    plot_tsne_visualization(results['tsne'], viz_path)
+    
+    # Analyse de clustering
+    plot_clustering_visualization(results['clustering'], viz_path)
+    
+    # Analyse des motifs
+    plot_pattern_visualization(results['patterns'], viz_path)
+
+def plot_pca_visualization(pca_results: Dict, output_path: Path) -> None:
+    """
+    Trace les visualisations PCA.
+    """
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    
+    # Variance expliquée
+    plt.figure(figsize=(12, 5))
+    
+    # Variance individuelle
+    plt.subplot(1, 2, 1)
+    plt.bar(range(1, len(pca_results['standard']['explained_variance_ratio']) + 1),
+            pca_results['standard']['explained_variance_ratio'])
+    plt.title('Variance Expliquée par Composante')
+    plt.xlabel('Composante')
+    plt.ylabel('Variance Expliquée')
+    
+    # Variance cumulée
+    plt.subplot(1, 2, 2)
+    plt.plot(range(1, len(pca_results['standard']['cumulative_variance']) + 1),
+             pca_results['standard']['cumulative_variance'], 'bo-')
+    plt.title('Variance Cumulée')
+    plt.xlabel('Nombre de Composantes')
+    plt.ylabel('Variance Cumulée')
+    
+    plt.tight_layout()
+    plt.savefig(output_path / 'pca_analysis.png', dpi=300, bbox_inches='tight')
+    plt.close()
+
+def plot_tsne_visualization(tsne_results: Dict, output_path: Path) -> None:
+    """
+    Trace les visualisations t-SNE.
+    """
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    
+    fig, axes = plt.subplots(1, len(tsne_results), figsize=(15, 5))
+    if len(tsne_results) == 1:
+        axes = [axes]
+    
+    for ax, (perplexity, results) in zip(axes, tsne_results.items()):
+        data = np.array(results['transformed_data'])
+        sns.scatterplot(x=data[:, 0], y=data[:, 1], ax=ax)
+        ax.set_title(f't-SNE (Perplexité = {perplexity.split("_")[1]})')
+    
+    plt.tight_layout()
+    plt.savefig(output_path / 'tsne_analysis.png', dpi=300, bbox_inches='tight')
+    plt.close()
+
+def plot_clustering_visualization(clustering_results: Dict, output_path: Path) -> None:
+    """
+    Trace les visualisations de clustering.
+    """
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    
+    # K-means
+    plt.figure(figsize=(12, 5))
+    
+    # Scores de silhouette
+    plt.subplot(1, 2, 1)
+    kmeans_scores = {
+        k: v['silhouette_score']
+        for k, v in clustering_results['kmeans'].items()
+    }
+    plt.bar(kmeans_scores.keys(), kmeans_scores.values())
+    plt.title('Scores de Silhouette - K-means')
+    plt.xlabel('Nombre de Clusters')
+    plt.ylabel('Score de Silhouette')
+    
+    # BIC pour GMM
+    plt.subplot(1, 2, 2)
+    gmm_scores = {
+        k: v['bic']
+        for k, v in clustering_results['gmm'].items()
+    }
+    plt.plot(gmm_scores.keys(), gmm_scores.values(), 'bo-')
+    plt.title('Critère BIC - GMM')
+    plt.xlabel('Nombre de Composantes')
+    plt.ylabel('BIC')
+    
+    plt.tight_layout()
+    plt.savefig(output_path / 'clustering_analysis.png', dpi=300, bbox_inches='tight')
+    plt.close()
+
+def plot_pattern_visualization(patterns: Dict, output_path: Path) -> None:
+    """
+    Trace les visualisations des motifs.
+    """
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    
+    plt.figure(figsize=(15, 6))
+    
+    # Top 10 des séquences
+    plt.subplot(1, 2, 1)
+    top_sequences = dict(list(patterns['sequence_patterns'].items())[:10])
+    plt.bar(top_sequences.keys(), top_sequences.values())
+    plt.title('Top 10 des Séquences de Types de Réservoirs')
+    plt.xlabel('Séquence')
+    plt.ylabel('Fréquence')
+    plt.xticks(rotation=45)
+    
+    # Top 10 des transitions
+    plt.subplot(1, 2, 2)
+    top_transitions = dict(list(patterns['transitions'].items())[:10])
+    plt.bar(top_transitions.keys(), top_transitions.values())
+    plt.title('Top 10 des Transitions entre Types de Réservoirs')
+    plt.xlabel('Transition')
+    plt.ylabel('Fréquence')
+    plt.xticks(rotation=45)
+    
+    plt.tight_layout()
+    plt.savefig(output_path / 'pattern_analysis.png', dpi=300, bbox_inches='tight')
+    plt.close() 
