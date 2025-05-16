@@ -131,16 +131,16 @@ def plot_feature_importance(importance: np.ndarray, feature_names: np.ndarray, o
         'RELPOS': 'Relative Position'
     }
     
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(12, 6))
     importance_df = pd.DataFrame({
         'Feature': [feature_name_map.get(f, f) for f in feature_names],
         'Importance': importance
     }).sort_values('Importance', ascending=False)
     
     sns.barplot(data=importance_df, x='Importance', y='Feature')
-    plt.title('Feature Importance')
+    plt.title('Feature Importance in Random Forest Model')
     plt.xlabel('Relative Importance')
-    plt.ylabel('Feature')
+    plt.ylabel('Geological Features')
     plt.tight_layout()
     plt.savefig(output_path, bbox_inches='tight', dpi=300)
     plt.close()
