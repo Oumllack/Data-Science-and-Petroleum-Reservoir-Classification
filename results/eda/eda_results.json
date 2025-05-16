@@ -1,0 +1,1912 @@
+{
+    "descriptive_stats": {
+        "basic_stats": {
+            "Facies": {
+                "count": 3232.0,
+                "mean": 4.422029702970297,
+                "std": 2.504242854922618,
+                "min": 1.0,
+                "25%": 2.0,
+                "50%": 4.0,
+                "75%": 6.0,
+                "max": 9.0
+            },
+            "Depth": {
+                "count": 3232.0,
+                "mean": 2875.824566831683,
+                "std": 131.0062737911359,
+                "min": 2573.5,
+                "25%": 2791.0,
+                "50%": 2893.5,
+                "75%": 2980.0,
+                "max": 3122.5
+            },
+            "GR": {
+                "count": 3232.0,
+                "mean": 66.1357691831683,
+                "std": 30.854826227695074,
+                "min": 13.25,
+                "25%": 46.91875,
+                "50%": 65.72149999999999,
+                "75%": 79.62625,
+                "max": 361.15
+            },
+            "ILD_log10": {
+                "count": 3232.0,
+                "mean": 0.6427191376980197,
+                "std": 0.24184452842075163,
+                "min": -0.025949097,
+                "25%": 0.49275,
+                "50%": 0.6244367774999999,
+                "75%": 0.812734512,
+                "max": 1.48
+            },
+            "DeltaPHI": {
+                "count": 3232.0,
+                "mean": 3.5596417079207923,
+                "std": 5.228948410034839,
+                "min": -21.832,
+                "25%": 1.16375,
+                "50%": 3.5,
+                "75%": 6.4325,
+                "max": 18.6
+            },
+            "PHIND": {
+                "count": 3232.0,
+                "mean": 13.483213180693069,
+                "std": 7.698980155426338,
+                "min": 0.55,
+                "25%": 8.34675,
+                "50%": 12.15,
+                "75%": 16.45375,
+                "max": 84.4
+            },
+            "PE": {
+                "count": 3232.0,
+                "mean": 3.7250139232673263,
+                "std": 0.8961521949634139,
+                "min": 0.2,
+                "25%": 3.1,
+                "50%": 3.5515,
+                "75%": 4.3,
+                "max": 8.094
+            },
+            "NM_M": {
+                "count": 3232.0,
+                "mean": 1.4984529702970297,
+                "std": 0.5000749757625673,
+                "min": 1.0,
+                "25%": 1.0,
+                "50%": 1.0,
+                "75%": 2.0,
+                "max": 2.0
+            },
+            "RELPOS": {
+                "count": 3232.0,
+                "mean": 0.5202874381188118,
+                "std": 0.2867920619106959,
+                "min": 0.01,
+                "25%": 0.273,
+                "50%": 0.526,
+                "75%": 0.76725,
+                "max": 1.0
+            }
+        },
+        "formation_stats": {
+            "('Facies', 'mean')": {
+                "A1 LM": 5.9433106575963714,
+                "A1 SH": 2.080357142857143,
+                "B1 LM": 6.9868421052631575,
+                "B1 SH": 2.220216606498195,
+                "B2 LM": 7.578947368421052,
+                "B2 SH": 2.2742857142857145,
+                "B3 LM": 7.56140350877193,
+                "B3 SH": 2.1545454545454548,
+                "B4 LM": 6.732394366197183,
+                "B4 SH": 1.7557603686635945,
+                "B5 LM": 7.783216783216783,
+                "B5 SH": 2.949367088607595,
+                "C LM": 5.910973084886129,
+                "C SH": 2.6590163934426227
+            },
+            "('Facies', 'std')": {
+                "A1 LM": 1.4659644408746366,
+                "A1 SH": 0.8408069278845645,
+                "B1 LM": 1.1392273558344845,
+                "B1 SH": 0.7312060391929286,
+                "B2 LM": 1.2010760725521996,
+                "B2 SH": 0.8932514728564755,
+                "B3 LM": 0.9452426721605319,
+                "B3 SH": 0.6577443624435534,
+                "B4 LM": 1.2756818510548247,
+                "B4 SH": 0.6384852573023564,
+                "B5 LM": 1.1825625469299899,
+                "B5 SH": 0.4500351603704096,
+                "C LM": 1.5799389679438889,
+                "C SH": 0.47481888831854135
+            },
+            "('Facies', 'min')": {
+                "A1 LM": 3,
+                "A1 SH": 1,
+                "B1 LM": 4,
+                "B1 SH": 1,
+                "B2 LM": 4,
+                "B2 SH": 1,
+                "B3 LM": 5,
+                "B3 SH": 1,
+                "B4 LM": 4,
+                "B4 SH": 1,
+                "B5 LM": 4,
+                "B5 SH": 2,
+                "C LM": 2,
+                "C SH": 2
+            },
+            "('Facies', 'max')": {
+                "A1 LM": 9,
+                "A1 SH": 8,
+                "B1 LM": 8,
+                "B1 SH": 4,
+                "B2 LM": 9,
+                "B2 SH": 7,
+                "B3 LM": 9,
+                "B3 SH": 3,
+                "B4 LM": 8,
+                "B4 SH": 3,
+                "B5 LM": 9,
+                "B5 SH": 5,
+                "C LM": 9,
+                "C SH": 3
+            },
+            "('Depth', 'mean')": {
+                "A1 LM": 2821.6916099773243,
+                "A1 SH": 2746.5520833333335,
+                "B1 LM": 2870.842105263158,
+                "B1 SH": 2799.4963898916967,
+                "B2 LM": 2917.718045112782,
+                "B2 SH": 2820.52,
+                "B3 LM": 2933.5438596491226,
+                "B3 SH": 2849.675,
+                "B4 LM": 2935.0352112676055,
+                "B4 SH": 2865.278801843318,
+                "B5 LM": 2968.652097902098,
+                "B5 SH": 2873.6139240506327,
+                "C LM": 2975.7215320910973,
+                "C SH": 2938.9
+            },
+            "('Depth', 'std')": {
+                "A1 LM": 114.36784810184915,
+                "A1 SH": 113.84869297084248,
+                "B1 LM": 108.09136466928439,
+                "B1 SH": 115.1233348774123,
+                "B2 LM": 96.30946320175399,
+                "B2 SH": 112.85983780116705,
+                "B3 LM": 94.8169420845543,
+                "B3 SH": 109.38231541093624,
+                "B4 LM": 102.77309695022585,
+                "B4 SH": 106.34141780675276,
+                "B5 LM": 110.03885491986249,
+                "B5 SH": 97.93561298534193,
+                "C LM": 96.31964846611147,
+                "C SH": 101.15416517167768
+            },
+            "('Depth', 'min')": {
+                "A1 LM": 2609.0,
+                "A1 SH": 2573.5,
+                "B1 LM": 2664.5,
+                "B1 SH": 2631.0,
+                "B2 LM": 2712.0,
+                "B2 SH": 2671.0,
+                "B3 LM": 2738.0,
+                "B3 SH": 2696.0,
+                "B4 LM": 2750.0,
+                "B4 SH": 2720.5,
+                "B5 LM": 2763.5,
+                "B5 SH": 2754.5,
+                "C LM": 2808.0,
+                "C SH": 2778.5
+            },
+            "('Depth', 'max')": {
+                "A1 LM": 2973.5,
+                "A1 SH": 2926.5,
+                "B1 LM": 3000.0,
+                "B1 SH": 2984.5,
+                "B2 LM": 3021.0,
+                "B2 SH": 3006.5,
+                "B3 LM": 3035.5,
+                "B3 SH": 3028.5,
+                "B4 LM": 3051.0,
+                "B4 SH": 3042.5,
+                "B5 LM": 3086.0,
+                "B5 SH": 2994.5,
+                "C LM": 3122.5,
+                "C SH": 3100.5
+            },
+            "('GR', 'mean')": {
+                "A1 LM": 63.81063945578231,
+                "A1 SH": 73.24913392857142,
+                "B1 LM": 43.71295394736842,
+                "B1 SH": 71.28331046931407,
+                "B2 LM": 36.726172932330826,
+                "B2 SH": 75.42072,
+                "B3 LM": 31.835333333333335,
+                "B3 SH": 77.47901363636365,
+                "B4 LM": 37.37619718309859,
+                "B4 SH": 70.55140092165898,
+                "B5 LM": 73.93376573426573,
+                "B5 SH": 78.6637088607595,
+                "C LM": 57.36980538302278,
+                "C SH": 80.7642131147541
+            },
+            "('GR', 'std')": {
+                "A1 LM": 23.902956861389345,
+                "A1 SH": 15.32603668475991,
+                "B1 LM": 21.827572906106056,
+                "B1 SH": 14.787426044175339,
+                "B2 LM": 25.834249481070106,
+                "B2 SH": 20.763079569617148,
+                "B3 LM": 14.400266178508808,
+                "B3 SH": 12.390639186389935,
+                "B4 LM": 15.62703460912688,
+                "B4 SH": 12.946930485661639,
+                "B5 LM": 54.417966598093706,
+                "B5 SH": 19.026346694580027,
+                "C LM": 43.407595713635125,
+                "C SH": 12.537049300177877
+            },
+            "('GR', 'min')": {
+                "A1 LM": 17.66,
+                "A1 SH": 41.46,
+                "B1 LM": 13.92,
+                "B1 SH": 37.28,
+                "B2 LM": 14.117,
+                "B2 SH": 45.45,
+                "B3 LM": 13.617,
+                "B3 SH": 40.07,
+                "B4 LM": 16.23,
+                "B4 SH": 48.131,
+                "B5 LM": 13.53,
+                "B5 SH": 26.23,
+                "C LM": 13.25,
+                "C SH": 49.23
+            },
+            "('GR', 'max')": {
+                "A1 LM": 195.89,
+                "A1 SH": 154.37,
+                "B1 LM": 145.75,
+                "B1 SH": 122.568,
+                "B2 LM": 131.875,
+                "B2 SH": 221.125,
+                "B3 LM": 67.48,
+                "B3 SH": 104.803,
+                "B4 LM": 79.11,
+                "B4 SH": 119.71,
+                "B5 LM": 305.87,
+                "B5 SH": 119.16,
+                "C LM": 361.15,
+                "C SH": 149.65
+            },
+            "('ILD_log10', 'mean')": {
+                "A1 LM": 0.8118169568798186,
+                "A1 SH": 0.4696739883690476,
+                "B1 LM": 0.8805373500263158,
+                "B1 SH": 0.562153037898917,
+                "B2 LM": 0.7454887218045113,
+                "B2 SH": 0.63269029496,
+                "B3 LM": 0.6821228070175439,
+                "B3 SH": 0.513958530109091,
+                "B4 LM": 0.7159009124225352,
+                "B4 SH": 0.4355523011843318,
+                "B5 LM": 0.4557823008426574,
+                "B5 SH": 0.4083528814936709,
+                "C LM": 0.8974176319627329,
+                "C SH": 0.5529692523409836
+            },
+            "('ILD_log10', 'std')": {
+                "A1 LM": 0.19885800940654755,
+                "A1 SH": 0.17870664607972025,
+                "B1 LM": 0.20751164555618473,
+                "B1 SH": 0.18920431049031125,
+                "B2 LM": 0.20568568314451682,
+                "B2 SH": 0.0998892104241199,
+                "B3 LM": 0.14888407165301443,
+                "B3 SH": 0.13787362547968773,
+                "B4 LM": 0.13363161661854045,
+                "B4 SH": 0.16434299606876643,
+                "B5 LM": 0.23470244127382603,
+                "B5 SH": 0.1315100976003431,
+                "C LM": 0.14347363996999138,
+                "C SH": 0.07426144947693505
+            },
+            "('ILD_log10', 'min')": {
+                "A1 LM": 0.334,
+                "A1 SH": -0.025949097,
+                "B1 LM": 0.529173603,
+                "B1 SH": 0.002166062,
+                "B2 LM": 0.192,
+                "B2 SH": 0.456,
+                "B3 LM": 0.462,
+                "B3 SH": 0.194,
+                "B4 LM": 0.385,
+                "B4 SH": 0.12515583,
+                "B5 LM": -0.019,
+                "B5 SH": -0.013,
+                "C LM": 0.418,
+                "C SH": 0.401
+            },
+            "('ILD_log10', 'max')": {
+                "A1 LM": 1.308,
+                "A1 SH": 0.782,
+                "B1 LM": 1.48,
+                "B1 SH": 0.921,
+                "B2 LM": 1.173,
+                "B2 SH": 0.966,
+                "B3 LM": 0.926,
+                "B3 SH": 0.804,
+                "B4 LM": 0.963,
+                "B4 SH": 0.837,
+                "B5 LM": 0.957,
+                "B5 SH": 0.722,
+                "C LM": 1.294,
+                "C SH": 0.806
+            },
+            "('DeltaPHI', 'mean')": {
+                "A1 LM": 3.679260770975057,
+                "A1 SH": 6.922252976190476,
+                "B1 LM": 1.2839539473684212,
+                "B1 SH": 2.691346570397112,
+                "B2 LM": 0.13113533834586466,
+                "B2 SH": 3.945874285714286,
+                "B3 LM": 2.035245614035088,
+                "B3 SH": 4.192009090909091,
+                "B4 LM": 2.725211267605634,
+                "B4 SH": 3.7527096774193547,
+                "B5 LM": 2.283618881118881,
+                "B5 SH": 2.330253164556962,
+                "C LM": 2.8969730848861284,
+                "C SH": 5.328445901639344
+            },
+            "('DeltaPHI', 'std')": {
+                "A1 LM": 4.0288831745431235,
+                "A1 SH": 4.466695039691319,
+                "B1 LM": 3.0467163006108975,
+                "B1 SH": 5.877024479660284,
+                "B2 LM": 4.087413255092811,
+                "B2 SH": 6.727185469453544,
+                "B3 LM": 2.204557619056338,
+                "B3 SH": 4.7457243010387264,
+                "B4 LM": 3.9164124834397436,
+                "B4 SH": 4.33196853759269,
+                "B5 LM": 3.6854861620592168,
+                "B5 SH": 9.857043141794023,
+                "C LM": 3.736325843168395,
+                "C SH": 7.383144754438407
+            },
+            "('DeltaPHI', 'min')": {
+                "A1 LM": -17.8,
+                "A1 SH": -17.8,
+                "B1 LM": -7.5,
+                "B1 SH": -19.9,
+                "B2 LM": -11.4,
+                "B2 SH": -19.5,
+                "B3 LM": -4.656,
+                "B3 SH": -16.0,
+                "B4 LM": -12.9,
+                "B4 SH": -14.3,
+                "B5 LM": -14.6,
+                "B5 SH": -18.7,
+                "C LM": -21.832,
+                "C SH": -19.6
+            },
+            "('DeltaPHI', 'max')": {
+                "A1 LM": 16.5,
+                "A1 SH": 18.6,
+                "B1 LM": 11.7,
+                "B1 SH": 14.4,
+                "B2 LM": 6.7,
+                "B2 SH": 14.7,
+                "B3 LM": 10.2,
+                "B3 SH": 13.7,
+                "B4 LM": 9.7,
+                "B4 SH": 13.7,
+                "B5 LM": 12.2,
+                "B5 SH": 18.5,
+                "C LM": 13.7,
+                "C SH": 17.2
+            },
+            "('PHIND', 'mean')": {
+                "A1 LM": 9.615385487528345,
+                "A1 SH": 15.187770833333335,
+                "B1 LM": 7.486677631578947,
+                "B1 SH": 18.275324909747294,
+                "B2 LM": 10.034097744360903,
+                "B2 SH": 16.650222857142857,
+                "B3 LM": 10.09956140350877,
+                "B3 SH": 15.00995909090909,
+                "B4 LM": 9.316943661971832,
+                "B4 SH": 15.111082949308756,
+                "B5 LM": 13.589157342657343,
+                "B5 SH": 23.47875949367089,
+                "C LM": 8.474614906832299,
+                "C SH": 20.107118032786886
+            },
+            "('PHIND', 'std')": {
+                "A1 LM": 3.9274143675830797,
+                "A1 SH": 4.572240155532429,
+                "B1 LM": 4.1851707626581875,
+                "B1 SH": 11.232333501083312,
+                "B2 LM": 4.718949724032817,
+                "B2 SH": 10.170780737306801,
+                "B3 LM": 3.2322009751071654,
+                "B3 SH": 5.677365040401383,
+                "B4 LM": 4.888548414077606,
+                "B4 SH": 5.973881085573185,
+                "B5 LM": 5.156345586774042,
+                "B5 SH": 7.54091032594734,
+                "C LM": 4.4787366008945275,
+                "C SH": 8.411165520915219
+            },
+            "('PHIND', 'min')": {
+                "A1 LM": 3.124,
+                "A1 SH": 5.255,
+                "B1 LM": 1.59,
+                "B1 SH": 7.125,
+                "B2 LM": 2.73,
+                "B2 SH": 5.13,
+                "B3 LM": 3.351,
+                "B3 SH": 4.397,
+                "B4 LM": 2.95,
+                "B4 SH": 7.9,
+                "B5 LM": 2.6,
+                "B5 SH": 7.95,
+                "C LM": 0.55,
+                "C SH": 5.05
+            },
+            "('PHIND', 'max')": {
+                "A1 LM": 28.2,
+                "A1 SH": 36.13,
+                "B1 LM": 27.606,
+                "B1 SH": 84.4,
+                "B2 LM": 25.745,
+                "B2 SH": 52.369,
+                "B3 LM": 18.92,
+                "B3 SH": 36.7,
+                "B4 LM": 28.0,
+                "B4 SH": 51.805,
+                "B5 LM": 33.6,
+                "B5 SH": 41.445,
+                "C LM": 47.721,
+                "C SH": 75.5
+            },
+            "('PE', 'mean')": {
+                "A1 LM": 4.063707482993197,
+                "A1 SH": 3.0723065476190476,
+                "B1 LM": 4.186078947368421,
+                "B1 SH": 3.079772563176895,
+                "B2 LM": 4.672894736842105,
+                "B2 SH": 3.2801885714285715,
+                "B3 LM": 4.448280701754386,
+                "B3 SH": 3.138313636363636,
+                "B4 LM": 4.359478873239437,
+                "B4 SH": 3.033898617511521,
+                "B5 LM": 4.777164335664335,
+                "B5 SH": 3.049594936708861,
+                "C LM": 4.170360248447205,
+                "C SH": 3.2675901639344263
+            },
+            "('PE', 'std')": {
+                "A1 LM": 0.7291735534545363,
+                "A1 SH": 0.3684743269600235,
+                "B1 LM": 0.6800592935418646,
+                "B1 SH": 0.5673369224652308,
+                "B2 LM": 0.8162267237681586,
+                "B2 SH": 0.6116143175497574,
+                "B3 LM": 0.611109785390071,
+                "B3 SH": 0.40442035502369655,
+                "B4 LM": 0.8166032234489917,
+                "B4 SH": 0.3484578310848764,
+                "B5 LM": 1.0043074619667969,
+                "B5 SH": 0.5253733109622816,
+                "C LM": 0.6634777312218724,
+                "C SH": 0.5941433842829051
+            },
+            "('PE', 'min')": {
+                "A1 LM": 2.3,
+                "A1 SH": 1.9,
+                "B1 LM": 2.4,
+                "B1 SH": 0.833,
+                "B2 LM": 2.656,
+                "B2 SH": 1.465,
+                "B3 LM": 3.2,
+                "B3 SH": 2.0,
+                "B4 LM": 2.5,
+                "B4 SH": 1.9,
+                "B5 LM": 2.558,
+                "B5 SH": 2.099,
+                "C LM": 1.605,
+                "C SH": 0.2
+            },
+            "('PE', 'max')": {
+                "A1 LM": 6.2,
+                "A1 SH": 4.6,
+                "B1 LM": 6.1,
+                "B1 SH": 4.2,
+                "B2 LM": 6.321,
+                "B2 SH": 5.1,
+                "B3 LM": 5.7,
+                "B3 SH": 4.9,
+                "B4 LM": 5.9,
+                "B4 SH": 5.1,
+                "B5 LM": 8.094,
+                "B5 SH": 4.8,
+                "C LM": 5.8,
+                "C SH": 4.5
+            },
+            "('NM_M', 'mean')": {
+                "A1 LM": 1.997732426303855,
+                "A1 SH": 1.0119047619047619,
+                "B1 LM": 1.980263157894737,
+                "B1 SH": 1.0,
+                "B2 LM": 2.0,
+                "B2 SH": 1.022857142857143,
+                "B3 LM": 1.9824561403508771,
+                "B3 SH": 1.018181818181818,
+                "B4 LM": 1.9295774647887325,
+                "B4 SH": 1.0092165898617511,
+                "B5 LM": 1.9825174825174825,
+                "B5 SH": 1.0126582278481013,
+                "C LM": 1.9751552795031055,
+                "C SH": 1.0
+            },
+            "('NM_M', 'std')": {
+                "A1 LM": 0.04761904761904764,
+                "A1 SH": 0.1086192989144174,
+                "B1 LM": 0.13955438716873478,
+                "B1 SH": 0.0,
+                "B2 LM": 0.0,
+                "B2 SH": 0.1498767966937915,
+                "B3 LM": 0.13245323570650439,
+                "B3 SH": 0.13391322630467656,
+                "B4 LM": 0.2576788511734176,
+                "B4 SH": 0.0957805850067906,
+                "B5 LM": 0.13129032262926385,
+                "B5 SH": 0.1125087900926024,
+                "C LM": 0.15581310856570182,
+                "C SH": 0.0
+            },
+            "('NM_M', 'min')": {
+                "A1 LM": 1,
+                "A1 SH": 1,
+                "B1 LM": 1,
+                "B1 SH": 1,
+                "B2 LM": 2,
+                "B2 SH": 1,
+                "B3 LM": 1,
+                "B3 SH": 1,
+                "B4 LM": 1,
+                "B4 SH": 1,
+                "B5 LM": 1,
+                "B5 SH": 1,
+                "C LM": 1,
+                "C SH": 1
+            },
+            "('NM_M', 'max')": {
+                "A1 LM": 2,
+                "A1 SH": 2,
+                "B1 LM": 2,
+                "B1 SH": 1,
+                "B2 LM": 2,
+                "B2 SH": 2,
+                "B3 LM": 2,
+                "B3 SH": 2,
+                "B4 LM": 2,
+                "B4 SH": 2,
+                "B5 LM": 2,
+                "B5 SH": 2,
+                "C LM": 2,
+                "C SH": 1
+            },
+            "('RELPOS', 'mean')": {
+                "A1 LM": 0.5056167800453515,
+                "A1 SH": 0.5118095238095238,
+                "B1 LM": 0.5178618421052632,
+                "B1 SH": 0.5085451263537906,
+                "B2 LM": 0.5440075187969924,
+                "B2 SH": 0.5105771428571428,
+                "B3 LM": 0.543859649122807,
+                "B3 SH": 0.5230863636363636,
+                "B4 LM": 0.5394647887323943,
+                "B4 SH": 0.5136036866359447,
+                "B5 LM": 0.49699300699300697,
+                "B5 SH": 0.47872151898734183,
+                "C LM": 0.5694844720496894,
+                "C SH": 0.5065081967213115
+            },
+            "('RELPOS', 'std')": {
+                "A1 LM": 0.2896345826124063,
+                "A1 SH": 0.29075673685820136,
+                "B1 LM": 0.28850078447084476,
+                "B1 SH": 0.2857854589935885,
+                "B2 LM": 0.2683715057426078,
+                "B2 SH": 0.28917733799155454,
+                "B3 LM": 0.29022709326346574,
+                "B3 SH": 0.28653767958565746,
+                "B4 LM": 0.2979662411839836,
+                "B4 SH": 0.2912540725915444,
+                "B5 LM": 0.28169546817979074,
+                "B5 SH": 0.280354488822261,
+                "C LM": 0.2838122393529131,
+                "C SH": 0.2850773338609665
+            },
+            "('RELPOS', 'min')": {
+                "A1 LM": 0.011,
+                "A1 SH": 0.01,
+                "B1 LM": 0.026,
+                "B1 SH": 0.01,
+                "B2 LM": 0.053,
+                "B2 SH": 0.01,
+                "B3 LM": 0.071,
+                "B3 SH": 0.01,
+                "B4 LM": 0.042,
+                "B4 SH": 0.01,
+                "B5 LM": 0.01,
+                "B5 SH": 0.038,
+                "C LM": 0.01,
+                "C SH": 0.018
+            },
+            "('RELPOS', 'max')": {
+                "A1 LM": 1.0,
+                "A1 SH": 1.0,
+                "B1 LM": 1.0,
+                "B1 SH": 1.0,
+                "B2 LM": 1.0,
+                "B2 SH": 1.0,
+                "B3 LM": 1.0,
+                "B3 SH": 1.0,
+                "B4 LM": 1.0,
+                "B4 SH": 1.0,
+                "B5 LM": 1.0,
+                "B5 SH": 1.0,
+                "C LM": 1.0,
+                "C SH": 1.0
+            }
+        },
+        "reservoir_stats": {
+            "('Facies', 'mean')": {
+                "ReservoirType.CARBONATE": 4.541147132169576,
+                "ReservoirType.SANDSTONE": 1.740220661985958,
+                "ReservoirType.SHALE": 3.0,
+                "ReservoirType.TIGHT": 6.175,
+                "ReservoirType.UNCONVENTIONAL": 8.244309559939301
+            },
+            "('Facies', 'std')": {
+                "ReservoirType.CARBONATE": 0.49892652845685065,
+                "ReservoirType.SANDSTONE": 0.43873351804230537,
+                "ReservoirType.SHALE": 0.0,
+                "ReservoirType.TIGHT": 0.38030681522034465,
+                "ReservoirType.UNCONVENTIONAL": 0.4300034651195838
+            },
+            "('Facies', 'min')": {
+                "ReservoirType.CARBONATE": 4,
+                "ReservoirType.SANDSTONE": 1,
+                "ReservoirType.SHALE": 3,
+                "ReservoirType.TIGHT": 6,
+                "ReservoirType.UNCONVENTIONAL": 8
+            },
+            "('Facies', 'max')": {
+                "ReservoirType.CARBONATE": 5,
+                "ReservoirType.SANDSTONE": 2,
+                "ReservoirType.SHALE": 3,
+                "ReservoirType.TIGHT": 7,
+                "ReservoirType.UNCONVENTIONAL": 9
+            },
+            "('Depth', 'mean')": {
+                "ReservoirType.CARBONATE": 2916.1359102244387,
+                "ReservoirType.SANDSTONE": 2814.366599799398,
+                "ReservoirType.SHALE": 2875.241463414634,
+                "ReservoirType.TIGHT": 2898.18125,
+                "ReservoirType.UNCONVENTIONAL": 2925.8209408194234
+            },
+            "('Depth', 'std')": {
+                "ReservoirType.CARBONATE": 130.0450772126029,
+                "ReservoirType.SANDSTONE": 132.51552442876977,
+                "ReservoirType.SHALE": 104.1510264342173,
+                "ReservoirType.TIGHT": 121.54626064208259,
+                "ReservoirType.UNCONVENTIONAL": 122.87237535201088
+            },
+            "('Depth', 'min')": {
+                "ReservoirType.CARBONATE": 2612.5,
+                "ReservoirType.SANDSTONE": 2573.5,
+                "ReservoirType.SHALE": 2605.0,
+                "ReservoirType.TIGHT": 2615.5,
+                "ReservoirType.UNCONVENTIONAL": 2608.5
+            },
+            "('Depth', 'max')": {
+                "ReservoirType.CARBONATE": 3122.5,
+                "ReservoirType.SANDSTONE": 3100.5,
+                "ReservoirType.SHALE": 3092.5,
+                "ReservoirType.TIGHT": 3116.0,
+                "ReservoirType.UNCONVENTIONAL": 3108.0
+            },
+            "('GR', 'mean')": {
+                "ReservoirType.CARBONATE": 75.09288528678304,
+                "ReservoirType.SANDSTONE": 71.97949949849549,
+                "ReservoirType.SHALE": 79.91508292682927,
+                "ReservoirType.TIGHT": 57.140051785714284,
+                "ReservoirType.UNCONVENTIONAL": 46.629427921092564
+            },
+            "('GR', 'std')": {
+                "ReservoirType.CARBONATE": 44.76908596812992,
+                "ReservoirType.SANDSTONE": 13.573711040792242,
+                "ReservoirType.SHALE": 16.83970565630028,
+                "ReservoirType.TIGHT": 35.54156225642042,
+                "ReservoirType.UNCONVENTIONAL": 33.34132003186229
+            },
+            "('GR', 'min')": {
+                "ReservoirType.CARBONATE": 14.41,
+                "ReservoirType.SANDSTONE": 47.6,
+                "ReservoirType.SHALE": 26.23,
+                "ReservoirType.TIGHT": 13.53,
+                "ReservoirType.UNCONVENTIONAL": 13.25
+            },
+            "('GR', 'max')": {
+                "ReservoirType.CARBONATE": 361.15,
+                "ReservoirType.SANDSTONE": 154.37,
+                "ReservoirType.SHALE": 221.125,
+                "ReservoirType.TIGHT": 305.87,
+                "ReservoirType.UNCONVENTIONAL": 273.48
+            },
+            "('ILD_log10', 'mean')": {
+                "ReservoirType.CARBONATE": 0.8005504373216958,
+                "ReservoirType.SANDSTONE": 0.5022266118014042,
+                "ReservoirType.SHALE": 0.5475039196585366,
+                "ReservoirType.TIGHT": 0.8112023940142857,
+                "ReservoirType.UNCONVENTIONAL": 0.704915545477997
+            },
+            "('ILD_log10', 'std')": {
+                "ReservoirType.CARBONATE": 0.18459603661385604,
+                "ReservoirType.SANDSTONE": 0.17699515139933739,
+                "ReservoirType.SHALE": 0.1284877009972768,
+                "ReservoirType.TIGHT": 0.24910962220364724,
+                "ReservoirType.UNCONVENTIONAL": 0.2633368455522058
+            },
+            "('ILD_log10', 'min')": {
+                "ReservoirType.CARBONATE": -0.019,
+                "ReservoirType.SANDSTONE": -0.025949097,
+                "ReservoirType.SHALE": -0.013,
+                "ReservoirType.TIGHT": 0.093,
+                "ReservoirType.UNCONVENTIONAL": -0.012
+            },
+            "('ILD_log10', 'max')": {
+                "ReservoirType.CARBONATE": 1.223,
+                "ReservoirType.SANDSTONE": 0.912,
+                "ReservoirType.SHALE": 0.966,
+                "ReservoirType.TIGHT": 1.48,
+                "ReservoirType.UNCONVENTIONAL": 1.452
+            },
+            "('DeltaPHI', 'mean')": {
+                "ReservoirType.CARBONATE": 4.5815735660847885,
+                "ReservoirType.SANDSTONE": 4.841259779338014,
+                "ReservoirType.SHALE": 3.797479674796748,
+                "ReservoirType.TIGHT": 3.131923214285714,
+                "ReservoirType.UNCONVENTIONAL": 1.1403459787556904
+            },
+            "('DeltaPHI', 'std')": {
+                "ReservoirType.CARBONATE": 3.817688751744895,
+                "ReservoirType.SANDSTONE": 4.80857292301374,
+                "ReservoirType.SHALE": 7.897448857809705,
+                "ReservoirType.TIGHT": 3.37385563178792,
+                "ReservoirType.UNCONVENTIONAL": 3.6514363641523566
+            },
+            "('DeltaPHI', 'min')": {
+                "ReservoirType.CARBONATE": -15.0,
+                "ReservoirType.SANDSTONE": -19.6,
+                "ReservoirType.SHALE": -19.9,
+                "ReservoirType.TIGHT": -14.6,
+                "ReservoirType.UNCONVENTIONAL": -21.832
+            },
+            "('DeltaPHI', 'max')": {
+                "ReservoirType.CARBONATE": 16.5,
+                "ReservoirType.SANDSTONE": 18.6,
+                "ReservoirType.SHALE": 18.5,
+                "ReservoirType.TIGHT": 16.0,
+                "ReservoirType.UNCONVENTIONAL": 13.7
+            },
+            "('PHIND', 'mean')": {
+                "ReservoirType.CARBONATE": 10.29231421446384,
+                "ReservoirType.SANDSTONE": 15.092894684052157,
+                "ReservoirType.SHALE": 20.61969756097561,
+                "ReservoirType.TIGHT": 8.60436607142857,
+                "ReservoirType.UNCONVENTIONAL": 10.475496206373293
+            },
+            "('PHIND', 'std')": {
+                "ReservoirType.CARBONATE": 4.671444046119193,
+                "ReservoirType.SANDSTONE": 6.553177299816719,
+                "ReservoirType.SHALE": 9.49588200013558,
+                "ReservoirType.TIGHT": 4.574272619763729,
+                "ReservoirType.UNCONVENTIONAL": 4.880462799561483
+            },
+            "('PHIND', 'min')": {
+                "ReservoirType.CARBONATE": 2.6,
+                "ReservoirType.SANDSTONE": 5.64,
+                "ReservoirType.SHALE": 3.95,
+                "ReservoirType.TIGHT": 2.32,
+                "ReservoirType.UNCONVENTIONAL": 0.55
+            },
+            "('PHIND', 'max')": {
+                "ReservoirType.CARBONATE": 33.6,
+                "ReservoirType.SANDSTONE": 84.4,
+                "ReservoirType.SHALE": 75.5,
+                "ReservoirType.TIGHT": 37.75,
+                "ReservoirType.UNCONVENTIONAL": 47.721
+            },
+            "('PE', 'mean')": {
+                "ReservoirType.CARBONATE": 3.9066109725685783,
+                "ReservoirType.SANDSTONE": 3.136825476429288,
+                "ReservoirType.SHALE": 3.1323398373983737,
+                "ReservoirType.TIGHT": 4.1356375,
+                "ReservoirType.UNCONVENTIONAL": 4.70854779969651
+            },
+            "('PE', 'std')": {
+                "ReservoirType.CARBONATE": 0.5973023382503216,
+                "ReservoirType.SANDSTONE": 0.4183007791052978,
+                "ReservoirType.SHALE": 0.6209684093655177,
+                "ReservoirType.TIGHT": 0.6978987776025039,
+                "ReservoirType.UNCONVENTIONAL": 0.8385574050999053
+            },
+            "('PE', 'min')": {
+                "ReservoirType.CARBONATE": 2.28,
+                "ReservoirType.SANDSTONE": 0.833,
+                "ReservoirType.SHALE": 0.2,
+                "ReservoirType.TIGHT": 2.102,
+                "ReservoirType.UNCONVENTIONAL": 1.605
+            },
+            "('PE', 'max')": {
+                "ReservoirType.CARBONATE": 5.5,
+                "ReservoirType.SANDSTONE": 5.1,
+                "ReservoirType.SHALE": 5.1,
+                "ReservoirType.TIGHT": 6.2,
+                "ReservoirType.UNCONVENTIONAL": 8.094
+            },
+            "('NM_M', 'mean')": {
+                "ReservoirType.CARBONATE": 1.9600997506234414,
+                "ReservoirType.SANDSTONE": 1.0060180541624875,
+                "ReservoirType.SHALE": 1.0260162601626017,
+                "ReservoirType.TIGHT": 1.9946428571428572,
+                "ReservoirType.UNCONVENTIONAL": 1.9817905918057663
+            },
+            "('NM_M', 'std')": {
+                "ReservoirType.CARBONATE": 0.19596935991357847,
+                "ReservoirType.SANDSTONE": 0.07738115434144108,
+                "ReservoirType.SHALE": 0.15931316258948736,
+                "ReservoirType.TIGHT": 0.07306145343141524,
+                "ReservoirType.UNCONVENTIONAL": 0.13380954971616163
+            },
+            "('NM_M', 'min')": {
+                "ReservoirType.CARBONATE": 1,
+                "ReservoirType.SANDSTONE": 1,
+                "ReservoirType.SHALE": 1,
+                "ReservoirType.TIGHT": 1,
+                "ReservoirType.UNCONVENTIONAL": 1
+            },
+            "('NM_M', 'max')": {
+                "ReservoirType.CARBONATE": 2,
+                "ReservoirType.SANDSTONE": 2,
+                "ReservoirType.SHALE": 2,
+                "ReservoirType.TIGHT": 2,
+                "ReservoirType.UNCONVENTIONAL": 2
+            },
+            "('RELPOS', 'mean')": {
+                "ReservoirType.CARBONATE": 0.5132668329177057,
+                "ReservoirType.SANDSTONE": 0.4811063189568706,
+                "ReservoirType.SHALE": 0.5609788617886179,
+                "ReservoirType.TIGHT": 0.5124375,
+                "ReservoirType.UNCONVENTIONAL": 0.5525326251896813
+            },
+            "('RELPOS', 'std')": {
+                "ReservoirType.CARBONATE": 0.270979124882701,
+                "ReservoirType.SANDSTONE": 0.25504095019288925,
+                "ReservoirType.SHALE": 0.326332344744917,
+                "ReservoirType.TIGHT": 0.2791060794754907,
+                "ReservoirType.UNCONVENTIONAL": 0.3003797799983411
+            },
+            "('RELPOS', 'min')": {
+                "ReservoirType.CARBONATE": 0.011,
+                "ReservoirType.SANDSTONE": 0.019,
+                "ReservoirType.SHALE": 0.01,
+                "ReservoirType.TIGHT": 0.01,
+                "ReservoirType.UNCONVENTIONAL": 0.01
+            },
+            "('RELPOS', 'max')": {
+                "ReservoirType.CARBONATE": 1.0,
+                "ReservoirType.SANDSTONE": 1.0,
+                "ReservoirType.SHALE": 1.0,
+                "ReservoirType.TIGHT": 1.0,
+                "ReservoirType.UNCONVENTIONAL": 1.0
+            }
+        }
+    },
+    "data_quality": {
+        "missing_values": {
+            "Facies": 0,
+            "Formation": 0,
+            "Well Name": 0,
+            "Depth": 0,
+            "GR": 0,
+            "ILD_log10": 0,
+            "DeltaPHI": 0,
+            "PHIND": 0,
+            "PE": 0,
+            "NM_M": 0,
+            "RELPOS": 0,
+            "ReservoirType": 0
+        },
+        "unique_values": {
+            "Facies": 9,
+            "Formation": 14,
+            "Well Name": 8,
+            "Depth": 1099,
+            "GR": 2776,
+            "ILD_log10": 1276,
+            "DeltaPHI": 1055,
+            "PHIND": 1949,
+            "PE": 995,
+            "NM_M": 2,
+            "RELPOS": 825,
+            "ReservoirType": 5
+        },
+        "outliers": {
+            "Facies": 0,
+            "Depth": 0,
+            "GR": 54,
+            "ILD_log10": 6,
+            "DeltaPHI": 60,
+            "PHIND": 60,
+            "PE": 24,
+            "NM_M": 0,
+            "RELPOS": 0
+        }
+    },
+    "correlations": {
+        "pearson": {
+            "Facies": {
+                "Facies": 1.0,
+                "Depth": 0.34016235642839265,
+                "GR": -0.3443442746052941,
+                "ILD_log10": 0.39449283698819726,
+                "DeltaPHI": -0.23406375365765617,
+                "PHIND": -0.3559047938040488,
+                "PE": 0.7042307431390662,
+                "NM_M": 0.8546539388223516,
+                "RELPOS": 0.0685250235026628
+            },
+            "Depth": {
+                "Facies": 0.34016235642839265,
+                "Depth": 1.0,
+                "GR": -0.06409642692250514,
+                "ILD_log10": 0.17803899334676768,
+                "DeltaPHI": -0.09139122263744738,
+                "PHIND": -0.07437263097519327,
+                "PE": 0.2775769812334223,
+                "NM_M": 0.29708469978301916,
+                "RELPOS": 0.0013863566709889944
+            },
+            "GR": {
+                "Facies": -0.3443442746052941,
+                "Depth": -0.06409642692250514,
+                "GR": 1.0,
+                "ILD_log10": -0.1555528317862142,
+                "DeltaPHI": 0.1899766847822854,
+                "PHIND": 0.2482697608544856,
+                "PE": -0.28902312797112356,
+                "NM_M": -0.28106592839589944,
+                "RELPOS": -0.17346571851405454
+            },
+            "ILD_log10": {
+                "Facies": 0.39449283698819726,
+                "Depth": 0.17803899334676768,
+                "GR": -0.1555528317862142,
+                "ILD_log10": 1.0,
+                "DeltaPHI": -0.1176042888002463,
+                "PHIND": -0.522917006345687,
+                "PE": 0.3845886483364856,
+                "NM_M": 0.5192514352135704,
+                "RELPOS": 0.08796211629506882
+            },
+            "DeltaPHI": {
+                "Facies": -0.23406375365765617,
+                "Depth": -0.09139122263744738,
+                "GR": 0.1899766847822854,
+                "ILD_log10": -0.1176042888002463,
+                "DeltaPHI": 1.0,
+                "PHIND": -0.25021140408449694,
+                "PE": 0.011488596853876307,
+                "NM_M": -0.17399854121232428,
+                "RELPOS": 0.03657871465113855
+            },
+            "PHIND": {
+                "Facies": -0.3559047938040488,
+                "Depth": -0.07437263097519327,
+                "GR": 0.2482697608544856,
+                "ILD_log10": -0.522917006345687,
+                "DeltaPHI": -0.25021140408449694,
+                "PHIND": 1.0,
+                "PE": -0.5734178539618314,
+                "NM_M": -0.4884027870945597,
+                "RELPOS": -0.03453962078178775
+            },
+            "PE": {
+                "Facies": 0.7042307431390662,
+                "Depth": 0.2775769812334223,
+                "GR": -0.28902312797112356,
+                "ILD_log10": 0.3845886483364856,
+                "DeltaPHI": 0.011488596853876307,
+                "PHIND": -0.5734178539618314,
+                "PE": 1.0,
+                "NM_M": 0.6570889452276293,
+                "RELPOS": 0.018905033335490574
+            },
+            "NM_M": {
+                "Facies": 0.8546539388223516,
+                "Depth": 0.29708469978301916,
+                "GR": -0.28106592839589944,
+                "ILD_log10": 0.5192514352135704,
+                "DeltaPHI": -0.17399854121232428,
+                "PHIND": -0.4884027870945597,
+                "PE": 0.6570889452276293,
+                "NM_M": 1.0,
+                "RELPOS": 0.03660680679006951
+            },
+            "RELPOS": {
+                "Facies": 0.0685250235026628,
+                "Depth": 0.0013863566709889944,
+                "GR": -0.17346571851405454,
+                "ILD_log10": 0.08796211629506882,
+                "DeltaPHI": 0.03657871465113855,
+                "PHIND": -0.03453962078178775,
+                "PE": 0.018905033335490574,
+                "NM_M": 0.03660680679006951,
+                "RELPOS": 1.0
+            }
+        },
+        "spearman": {
+            "Facies": {
+                "Facies": 1.0,
+                "Depth": 0.3613022415402969,
+                "GR": -0.44566951741254573,
+                "ILD_log10": 0.43714586320310145,
+                "DeltaPHI": -0.31061339583237,
+                "PHIND": -0.4201374003793854,
+                "PE": 0.7082167623466851,
+                "NM_M": 0.8567971897367201,
+                "RELPOS": 0.07573435146001659
+            },
+            "Depth": {
+                "Facies": 0.3613022415402969,
+                "Depth": 1.0,
+                "GR": -0.15427151879967888,
+                "ILD_log10": 0.17905793971051487,
+                "DeltaPHI": -0.15313085404942772,
+                "PHIND": -0.11103443975727689,
+                "PE": 0.28534067951342507,
+                "NM_M": 0.30629398001649183,
+                "RELPOS": 0.0021706870441994663
+            },
+            "GR": {
+                "Facies": -0.44566951741254573,
+                "Depth": -0.15427151879967888,
+                "GR": 1.0,
+                "ILD_log10": -0.28378364579136084,
+                "DeltaPHI": 0.3426214651116534,
+                "PHIND": 0.428664977999855,
+                "PE": -0.4091088995578017,
+                "NM_M": -0.46753853095909736,
+                "RELPOS": -0.16555184295809836
+            },
+            "ILD_log10": {
+                "Facies": 0.43714586320310145,
+                "Depth": 0.17905793971051487,
+                "GR": -0.28378364579136084,
+                "ILD_log10": 1.0,
+                "DeltaPHI": -0.1999849084115968,
+                "PHIND": -0.7277414972405211,
+                "PE": 0.49269545837915235,
+                "NM_M": 0.5465573782848495,
+                "RELPOS": 0.10589860284967892
+            },
+            "DeltaPHI": {
+                "Facies": -0.31061339583237,
+                "Depth": -0.15313085404942772,
+                "GR": 0.3426214651116534,
+                "ILD_log10": -0.1999849084115968,
+                "DeltaPHI": 1.0,
+                "PHIND": 0.08881557647107004,
+                "PE": -0.10059458410759795,
+                "NM_M": -0.2695234043932328,
+                "RELPOS": 0.029614291032624303
+            },
+            "PHIND": {
+                "Facies": -0.4201374003793854,
+                "Depth": -0.11103443975727689,
+                "GR": 0.428664977999855,
+                "ILD_log10": -0.7277414972405211,
+                "DeltaPHI": 0.08881557647107004,
+                "PHIND": 1.0,
+                "PE": -0.6299919385827746,
+                "NM_M": -0.579313172564917,
+                "RELPOS": -0.05676624470388835
+            },
+            "PE": {
+                "Facies": 0.7082167623466851,
+                "Depth": 0.28534067951342507,
+                "GR": -0.4091088995578017,
+                "ILD_log10": 0.49269545837915235,
+                "DeltaPHI": -0.10059458410759795,
+                "PHIND": -0.6299919385827746,
+                "PE": 1.0,
+                "NM_M": 0.6965693372037917,
+                "RELPOS": 0.038030024957958174
+            },
+            "NM_M": {
+                "Facies": 0.8567971897367201,
+                "Depth": 0.30629398001649183,
+                "GR": -0.46753853095909736,
+                "ILD_log10": 0.5465573782848495,
+                "DeltaPHI": -0.2695234043932328,
+                "PHIND": -0.579313172564917,
+                "PE": 0.6965693372037917,
+                "NM_M": 1.0,
+                "RELPOS": 0.03643153369375186
+            },
+            "RELPOS": {
+                "Facies": 0.07573435146001659,
+                "Depth": 0.0021706870441994663,
+                "GR": -0.16555184295809836,
+                "ILD_log10": 0.10589860284967892,
+                "DeltaPHI": 0.029614291032624303,
+                "PHIND": -0.05676624470388835,
+                "PE": 0.038030024957958174,
+                "NM_M": 0.03643153369375186,
+                "RELPOS": 1.0
+            }
+        },
+        "by_reservoir_type": {
+            "ReservoirType.SHALE": {
+                "Facies": {
+                    "Facies": NaN,
+                    "Depth": NaN,
+                    "GR": NaN,
+                    "ILD_log10": NaN,
+                    "DeltaPHI": NaN,
+                    "PHIND": NaN,
+                    "PE": NaN,
+                    "NM_M": NaN,
+                    "RELPOS": NaN
+                },
+                "Depth": {
+                    "Facies": NaN,
+                    "Depth": 1.0,
+                    "GR": 0.10197780823331981,
+                    "ILD_log10": 0.008137348486914787,
+                    "DeltaPHI": 0.10045998906263759,
+                    "PHIND": 0.12077891423172665,
+                    "PE": -0.0023693561088381472,
+                    "NM_M": 0.040797183665305485,
+                    "RELPOS": -0.02120243584314329
+                },
+                "GR": {
+                    "Facies": NaN,
+                    "Depth": 0.10197780823331981,
+                    "GR": 1.0,
+                    "ILD_log10": -0.17986156762513295,
+                    "DeltaPHI": 0.10806167915418546,
+                    "PHIND": 0.18758767244428917,
+                    "PE": -0.1365087743876213,
+                    "NM_M": 0.08532784222232254,
+                    "RELPOS": 0.046326099556050424
+                },
+                "ILD_log10": {
+                    "Facies": NaN,
+                    "Depth": 0.008137348486914787,
+                    "GR": -0.17986156762513295,
+                    "ILD_log10": 1.0,
+                    "DeltaPHI": -0.10931577029629502,
+                    "PHIND": -0.19856727549336173,
+                    "PE": 0.15929208902546635,
+                    "NM_M": 0.20167082196555827,
+                    "RELPOS": 0.17758902984761635
+                },
+                "DeltaPHI": {
+                    "Facies": NaN,
+                    "Depth": 0.10045998906263759,
+                    "GR": 0.10806167915418546,
+                    "ILD_log10": -0.10931577029629502,
+                    "DeltaPHI": 1.0,
+                    "PHIND": -0.628757792289215,
+                    "PE": 0.55219252486387,
+                    "NM_M": -0.11780442988917326,
+                    "RELPOS": 0.08622019569059311
+                },
+                "PHIND": {
+                    "Facies": NaN,
+                    "Depth": 0.12077891423172665,
+                    "GR": 0.18758767244428917,
+                    "ILD_log10": -0.19856727549336173,
+                    "DeltaPHI": -0.628757792289215,
+                    "PHIND": 1.0,
+                    "PE": -0.7598415191784751,
+                    "NM_M": -0.035323705724921155,
+                    "RELPOS": -0.0892312447426296
+                },
+                "PE": {
+                    "Facies": NaN,
+                    "Depth": -0.0023693561088381472,
+                    "GR": -0.1365087743876213,
+                    "ILD_log10": 0.15929208902546635,
+                    "DeltaPHI": 0.55219252486387,
+                    "PHIND": -0.7598415191784751,
+                    "PE": 1.0,
+                    "NM_M": -0.0009126690097475713,
+                    "RELPOS": 0.08473796819521691
+                },
+                "NM_M": {
+                    "Facies": NaN,
+                    "Depth": 0.040797183665305485,
+                    "GR": 0.08532784222232254,
+                    "ILD_log10": 0.20167082196555827,
+                    "DeltaPHI": -0.11780442988917326,
+                    "PHIND": -0.035323705724921155,
+                    "PE": -0.0009126690097475713,
+                    "NM_M": 1.0,
+                    "RELPOS": -0.090618633121639
+                },
+                "RELPOS": {
+                    "Facies": NaN,
+                    "Depth": -0.02120243584314329,
+                    "GR": 0.046326099556050424,
+                    "ILD_log10": 0.17758902984761635,
+                    "DeltaPHI": 0.08622019569059311,
+                    "PHIND": -0.0892312447426296,
+                    "PE": 0.08473796819521691,
+                    "NM_M": -0.090618633121639,
+                    "RELPOS": 1.0
+                }
+            },
+            "ReservoirType.SANDSTONE": {
+                "Facies": {
+                    "Facies": 1.0,
+                    "Depth": 0.2901136306055729,
+                    "GR": 0.32669580533342135,
+                    "ILD_log10": 0.43839477966582985,
+                    "DeltaPHI": 0.16452748168904527,
+                    "PHIND": 0.02477293243539512,
+                    "PE": 0.31670375354915553,
+                    "NM_M": 0.04609570898020712,
+                    "RELPOS": 0.06651150584950866
+                },
+                "Depth": {
+                    "Facies": 0.2901136306055729,
+                    "Depth": 1.0,
+                    "GR": 0.0523019836409204,
+                    "ILD_log10": 0.2881834940747193,
+                    "DeltaPHI": 0.001274144988842146,
+                    "PHIND": -0.03768841990099581,
+                    "PE": 0.10271000980134815,
+                    "NM_M": 0.030969802848137395,
+                    "RELPOS": -0.10236821350411372
+                },
+                "GR": {
+                    "Facies": 0.32669580533342135,
+                    "Depth": 0.0523019836409204,
+                    "GR": 1.0,
+                    "ILD_log10": 0.08365349903343615,
+                    "DeltaPHI": 0.12297690307444807,
+                    "PHIND": 0.3355441047757359,
+                    "PE": -0.011469637639263229,
+                    "NM_M": 0.0020226611776553906,
+                    "RELPOS": -0.0038022200914993995
+                },
+                "ILD_log10": {
+                    "Facies": 0.43839477966582985,
+                    "Depth": 0.2881834940747193,
+                    "GR": 0.08365349903343615,
+                    "ILD_log10": 1.0,
+                    "DeltaPHI": 0.015550101791079329,
+                    "PHIND": -0.24227602444977564,
+                    "PE": 0.4294308383722688,
+                    "NM_M": 0.07636266703459085,
+                    "RELPOS": 0.2768688561773284
+                },
+                "DeltaPHI": {
+                    "Facies": 0.16452748168904527,
+                    "Depth": 0.001274144988842146,
+                    "GR": 0.12297690307444807,
+                    "ILD_log10": 0.015550101791079329,
+                    "DeltaPHI": 1.0,
+                    "PHIND": -0.3243327793457043,
+                    "PE": 0.4258203104152025,
+                    "NM_M": -0.10979238780472671,
+                    "RELPOS": 0.12449409795508586
+                },
+                "PHIND": {
+                    "Facies": 0.02477293243539512,
+                    "Depth": -0.03768841990099581,
+                    "GR": 0.3355441047757359,
+                    "ILD_log10": -0.24227602444977564,
+                    "DeltaPHI": -0.3243327793457043,
+                    "PHIND": 1.0,
+                    "PE": -0.6140984406432412,
+                    "NM_M": 0.0128887253792724,
+                    "RELPOS": -0.1602630297306057
+                },
+                "PE": {
+                    "Facies": 0.31670375354915553,
+                    "Depth": 0.10271000980134815,
+                    "GR": -0.011469637639263229,
+                    "ILD_log10": 0.4294308383722688,
+                    "DeltaPHI": 0.4258203104152025,
+                    "PHIND": -0.6140984406432412,
+                    "PE": 1.0,
+                    "NM_M": -0.009676220438540934,
+                    "RELPOS": 0.16635358661022714
+                },
+                "NM_M": {
+                    "Facies": 0.04609570898020712,
+                    "Depth": 0.030969802848137395,
+                    "GR": 0.0020226611776553906,
+                    "ILD_log10": 0.07636266703459085,
+                    "DeltaPHI": -0.10979238780472671,
+                    "PHIND": 0.0128887253792724,
+                    "PE": -0.009676220438540934,
+                    "NM_M": 1.0,
+                    "RELPOS": -0.07039113916180996
+                },
+                "RELPOS": {
+                    "Facies": 0.06651150584950866,
+                    "Depth": -0.10236821350411372,
+                    "GR": -0.0038022200914993995,
+                    "ILD_log10": 0.2768688561773284,
+                    "DeltaPHI": 0.12449409795508586,
+                    "PHIND": -0.1602630297306057,
+                    "PE": 0.16635358661022714,
+                    "NM_M": -0.07039113916180996,
+                    "RELPOS": 1.0
+                }
+            },
+            "ReservoirType.UNCONVENTIONAL": {
+                "Facies": {
+                    "Facies": 1.0,
+                    "Depth": 0.4982003431991984,
+                    "GR": -0.029903094121394698,
+                    "ILD_log10": -0.2814205926860698,
+                    "DeltaPHI": -0.14676506723966698,
+                    "PHIND": 0.3207955334955391,
+                    "PE": 0.3985773891343504,
+                    "NM_M": 0.07743490133528522,
+                    "RELPOS": -0.19058390405425815
+                },
+                "Depth": {
+                    "Facies": 0.4982003431991984,
+                    "Depth": 1.0,
+                    "GR": 0.037294837560226196,
+                    "ILD_log10": -0.25337985327590345,
+                    "DeltaPHI": -0.07069169293075642,
+                    "PHIND": 0.24993452414725986,
+                    "PE": 0.3609531838044659,
+                    "NM_M": 0.025267011065293978,
+                    "RELPOS": -0.12448202613032869
+                },
+                "GR": {
+                    "Facies": -0.029903094121394698,
+                    "Depth": 0.037294837560226196,
+                    "GR": 1.0,
+                    "ILD_log10": -0.12337474710005218,
+                    "DeltaPHI": 0.17032801534755662,
+                    "PHIND": 0.08368051528394646,
+                    "PE": -0.15899661350640756,
+                    "NM_M": -0.0951861846532282,
+                    "RELPOS": -0.2879937415989149
+                },
+                "ILD_log10": {
+                    "Facies": -0.2814205926860698,
+                    "Depth": -0.25337985327590345,
+                    "GR": -0.12337474710005218,
+                    "ILD_log10": 1.0,
+                    "DeltaPHI": -0.07065814123834652,
+                    "PHIND": -0.6885190939603272,
+                    "PE": -0.25572765398127395,
+                    "NM_M": 0.036214269871747744,
+                    "RELPOS": 0.03626891028826354
+                },
+                "DeltaPHI": {
+                    "Facies": -0.14676506723966698,
+                    "Depth": -0.07069169293075642,
+                    "GR": 0.17032801534755662,
+                    "ILD_log10": -0.07065814123834652,
+                    "DeltaPHI": 1.0,
+                    "PHIND": -0.21257603891835028,
+                    "PE": 0.07928785764509673,
+                    "NM_M": 0.048315095882626155,
+                    "RELPOS": -0.007303556198940965
+                },
+                "PHIND": {
+                    "Facies": 0.3207955334955391,
+                    "Depth": 0.24993452414725986,
+                    "GR": 0.08368051528394646,
+                    "ILD_log10": -0.6885190939603272,
+                    "DeltaPHI": -0.21257603891835028,
+                    "PHIND": 1.0,
+                    "PE": 0.015245300134294437,
+                    "NM_M": -0.1790726363933418,
+                    "RELPOS": 0.04824963090331819
+                },
+                "PE": {
+                    "Facies": 0.3985773891343504,
+                    "Depth": 0.3609531838044659,
+                    "GR": -0.15899661350640756,
+                    "ILD_log10": -0.25572765398127395,
+                    "DeltaPHI": 0.07928785764509673,
+                    "PHIND": 0.015245300134294437,
+                    "PE": 1.0,
+                    "NM_M": 0.18369456483009394,
+                    "RELPOS": -0.10660573052156073
+                },
+                "NM_M": {
+                    "Facies": 0.07743490133528522,
+                    "Depth": 0.025267011065293978,
+                    "GR": -0.0951861846532282,
+                    "ILD_log10": 0.036214269871747744,
+                    "DeltaPHI": 0.048315095882626155,
+                    "PHIND": -0.1790726363933418,
+                    "PE": 0.18369456483009394,
+                    "NM_M": 1.0,
+                    "RELPOS": 0.0825180514573697
+                },
+                "RELPOS": {
+                    "Facies": -0.19058390405425815,
+                    "Depth": -0.12448202613032869,
+                    "GR": -0.2879937415989149,
+                    "ILD_log10": 0.03626891028826354,
+                    "DeltaPHI": -0.007303556198940965,
+                    "PHIND": 0.04824963090331819,
+                    "PE": -0.10660573052156073,
+                    "NM_M": 0.0825180514573697,
+                    "RELPOS": 1.0
+                }
+            },
+            "ReservoirType.TIGHT": {
+                "Facies": {
+                    "Facies": 1.0,
+                    "Depth": 0.10920162258127646,
+                    "GR": 0.09694626541620592,
+                    "ILD_log10": -0.6394477094050401,
+                    "DeltaPHI": 0.25990342153775525,
+                    "PHIND": 0.551855915518966,
+                    "PE": -0.3067148772413622,
+                    "NM_M": -0.030581542435661708,
+                    "RELPOS": 0.14547973731803338
+                },
+                "Depth": {
+                    "Facies": 0.10920162258127646,
+                    "Depth": 1.0,
+                    "GR": 0.0754195652017266,
+                    "ILD_log10": -0.0634697741254146,
+                    "DeltaPHI": -0.16645926010995182,
+                    "PHIND": 0.015677379901154625,
+                    "PE": -0.1659814375439599,
+                    "NM_M": -0.04571939020593779,
+                    "RELPOS": 0.06858161649845501
+                },
+                "GR": {
+                    "Facies": 0.09694626541620592,
+                    "Depth": 0.0754195652017266,
+                    "GR": 1.0,
+                    "ILD_log10": -0.0690392474994311,
+                    "DeltaPHI": 0.1563361341499187,
+                    "PHIND": 0.007801753231376331,
+                    "PE": -0.018169890377347054,
+                    "NM_M": 0.016416176760136292,
+                    "RELPOS": -0.32164538218236816
+                },
+                "ILD_log10": {
+                    "Facies": -0.6394477094050401,
+                    "Depth": -0.0634697741254146,
+                    "GR": -0.0690392474994311,
+                    "ILD_log10": 1.0,
+                    "DeltaPHI": -0.2184235193510838,
+                    "PHIND": -0.7334226047873349,
+                    "PE": 0.40348603871478994,
+                    "NM_M": 0.061687516522201474,
+                    "RELPOS": -0.15208803207905247
+                },
+                "DeltaPHI": {
+                    "Facies": 0.25990342153775525,
+                    "Depth": -0.16645926010995182,
+                    "GR": 0.1563361341499187,
+                    "ILD_log10": -0.2184235193510838,
+                    "DeltaPHI": 1.0,
+                    "PHIND": 0.20624530630135185,
+                    "PE": -0.13452310269857243,
+                    "NM_M": 0.14480993003979323,
+                    "RELPOS": 0.08902001206126038
+                },
+                "PHIND": {
+                    "Facies": 0.551855915518966,
+                    "Depth": 0.015677379901154625,
+                    "GR": 0.007801753231376331,
+                    "ILD_log10": -0.7334226047873349,
+                    "DeltaPHI": 0.20624530630135185,
+                    "PHIND": 1.0,
+                    "PE": -0.5114949144629911,
+                    "NM_M": -0.23119056805519303,
+                    "RELPOS": 0.24202159308710433
+                },
+                "PE": {
+                    "Facies": -0.3067148772413622,
+                    "Depth": -0.1659814375439599,
+                    "GR": -0.018169890377347054,
+                    "ILD_log10": 0.40348603871478994,
+                    "DeltaPHI": -0.13452310269857243,
+                    "PHIND": -0.5114949144629911,
+                    "PE": 1.0,
+                    "NM_M": 0.10402059366223411,
+                    "RELPOS": -0.22781794381034118
+                },
+                "NM_M": {
+                    "Facies": -0.030581542435661708,
+                    "Depth": -0.04571939020593779,
+                    "GR": 0.016416176760136292,
+                    "ILD_log10": 0.061687516522201474,
+                    "DeltaPHI": 0.14480993003979323,
+                    "PHIND": -0.23119056805519303,
+                    "PE": 0.10402059366223411,
+                    "NM_M": 1.0,
+                    "RELPOS": -0.042695369877637876
+                },
+                "RELPOS": {
+                    "Facies": 0.14547973731803338,
+                    "Depth": 0.06858161649845501,
+                    "GR": -0.32164538218236816,
+                    "ILD_log10": -0.15208803207905247,
+                    "DeltaPHI": 0.08902001206126038,
+                    "PHIND": 0.24202159308710433,
+                    "PE": -0.22781794381034118,
+                    "NM_M": -0.042695369877637876,
+                    "RELPOS": 1.0
+                }
+            },
+            "ReservoirType.CARBONATE": {
+                "Facies": {
+                    "Facies": 1.0,
+                    "Depth": 0.346354821136145,
+                    "GR": -0.3516870668409591,
+                    "ILD_log10": 0.11842567601919604,
+                    "DeltaPHI": -0.24105634685228236,
+                    "PHIND": -0.16983383156646134,
+                    "PE": 0.1612397244179733,
+                    "NM_M": -0.05987374974047544,
+                    "RELPOS": 0.3108406456920724
+                },
+                "Depth": {
+                    "Facies": 0.346354821136145,
+                    "Depth": 1.0,
+                    "GR": -0.15019188501312294,
+                    "ILD_log10": 0.26481843853279613,
+                    "DeltaPHI": -0.23986205618541867,
+                    "PHIND": -0.3031153849400644,
+                    "PE": 0.2053290243685228,
+                    "NM_M": 0.21230010355433834,
+                    "RELPOS": 0.18036648290302099
+                },
+                "GR": {
+                    "Facies": -0.3516870668409591,
+                    "Depth": -0.15019188501312294,
+                    "GR": 1.0,
+                    "ILD_log10": 0.015018674222214598,
+                    "DeltaPHI": 0.1708810141615648,
+                    "PHIND": 0.13274284132283898,
+                    "PE": 0.07534412057201631,
+                    "NM_M": 0.00798415186965465,
+                    "RELPOS": -0.23444620217815634
+                },
+                "ILD_log10": {
+                    "Facies": 0.11842567601919604,
+                    "Depth": 0.26481843853279613,
+                    "GR": 0.015018674222214598,
+                    "ILD_log10": 1.0,
+                    "DeltaPHI": -0.03542213400262655,
+                    "PHIND": -0.6925066590758373,
+                    "PE": 0.456701299552721,
+                    "NM_M": 0.3713407703604175,
+                    "RELPOS": 0.17359511589934262
+                },
+                "DeltaPHI": {
+                    "Facies": -0.24105634685228236,
+                    "Depth": -0.23986205618541867,
+                    "GR": 0.1708810141615648,
+                    "ILD_log10": -0.03542213400262655,
+                    "DeltaPHI": 1.0,
+                    "PHIND": -0.06421081261023669,
+                    "PE": 0.11591885272015984,
+                    "NM_M": 0.08268120150332471,
+                    "RELPOS": -0.1361439736727332
+                },
+                "PHIND": {
+                    "Facies": -0.16983383156646134,
+                    "Depth": -0.3031153849400644,
+                    "GR": 0.13274284132283898,
+                    "ILD_log10": -0.6925066590758373,
+                    "DeltaPHI": -0.06421081261023669,
+                    "PHIND": 1.0,
+                    "PE": -0.5684545738881928,
+                    "NM_M": -0.43943206207238666,
+                    "RELPOS": -0.21990516258694606
+                },
+                "PE": {
+                    "Facies": 0.1612397244179733,
+                    "Depth": 0.2053290243685228,
+                    "GR": 0.07534412057201631,
+                    "ILD_log10": 0.456701299552721,
+                    "DeltaPHI": 0.11591885272015984,
+                    "PHIND": -0.5684545738881928,
+                    "PE": 1.0,
+                    "NM_M": 0.28418281590827454,
+                    "RELPOS": 0.0498288194379462
+                },
+                "NM_M": {
+                    "Facies": -0.05987374974047544,
+                    "Depth": 0.21230010355433834,
+                    "GR": 0.00798415186965465,
+                    "ILD_log10": 0.3713407703604175,
+                    "DeltaPHI": 0.08268120150332471,
+                    "PHIND": -0.43943206207238666,
+                    "PE": 0.28418281590827454,
+                    "NM_M": 1.0,
+                    "RELPOS": 0.2514080381640259
+                },
+                "RELPOS": {
+                    "Facies": 0.3108406456920724,
+                    "Depth": 0.18036648290302099,
+                    "GR": -0.23444620217815634,
+                    "ILD_log10": 0.17359511589934262,
+                    "DeltaPHI": -0.1361439736727332,
+                    "PHIND": -0.21990516258694606,
+                    "PE": 0.0498288194379462,
+                    "NM_M": 0.2514080381640259,
+                    "RELPOS": 1.0
+                }
+            }
+        }
+    },
+    "distributions": {
+        "Facies": {
+            "skewness": 0.37740208326960567,
+            "kurtosis": -1.244647993147427,
+            "normality_test": {
+                "statistic": 4292.741574906319,
+                "p_value": 0.0
+            }
+        },
+        "Depth": {
+            "skewness": -0.406645137696913,
+            "kurtosis": -0.7088450522955951,
+            "normality_test": {
+                "statistic": 258.8379034975662,
+                "p_value": 6.223911401999505e-57
+            }
+        },
+        "GR": {
+            "skewness": 2.2700953003876343,
+            "kurtosis": 13.111495454133905,
+            "normality_test": {
+                "statistic": 1766.2725496716744,
+                "p_value": 0.0
+            }
+        },
+        "ILD_log10": {
+            "skewness": 0.03336960782673902,
+            "kurtosis": -0.0952553642816083,
+            "normality_test": {
+                "statistic": 1.8126559675323883,
+                "p_value": 0.40400501660208243
+            }
+        },
+        "DeltaPHI": {
+            "skewness": -0.813137483574034,
+            "kurtosis": 2.6545794027438365,
+            "normality_test": {
+                "statistic": 485.14483112319783,
+                "p_value": 4.48888479564817e-106
+            }
+        },
+        "PHIND": {
+            "skewness": 2.240271442876099,
+            "kurtosis": 9.944839743088625,
+            "normality_test": {
+                "statistic": 1659.9296022371134,
+                "p_value": 0.0
+            }
+        },
+        "PE": {
+            "skewness": 0.6612927838038947,
+            "kurtosis": 0.970185762597672,
+            "normality_test": {
+                "statistic": 259.445553331803,
+                "p_value": 4.5931847774218295e-57
+            }
+        },
+        "NM_M": {
+            "skewness": 0.006188148432154317,
+            "kurtosis": -1.9999617068189812,
+            "normality_test": {
+                "statistic": 11357.444443098913,
+                "p_value": 0.0
+            }
+        },
+        "RELPOS": {
+            "skewness": -0.032547485373208875,
+            "kurtosis": -1.1934947255422514,
+            "normality_test": {
+                "statistic": 2545.2757634853847,
+                "p_value": 0.0
+            }
+        }
+    },
+    "relationships": {
+        "Facies": {
+            "f_statistic": 32296.747193756764,
+            "p_value": 0.0
+        },
+        "Depth": {
+            "f_statistic": 104.23251731471508,
+            "p_value": 1.3258346523378764e-83
+        },
+        "GR": {
+            "f_statistic": 148.82074905778984,
+            "p_value": 5.9037141798292785e-117
+        },
+        "ILD_log10": {
+            "f_statistic": 320.1617314586343,
+            "p_value": 2.891850411734338e-232
+        },
+        "DeltaPHI": {
+            "f_statistic": 59.31940697606021,
+            "p_value": 2.134921360516183e-48
+        },
+        "PHIND": {
+            "f_statistic": 344.24361456595074,
+            "p_value": 4.6413942864129605e-247
+        },
+        "PE": {
+            "f_statistic": 817.6266859780876,
+            "p_value": 0.0
+        },
+        "NM_M": {
+            "f_statistic": 11807.710775333404,
+            "p_value": 0.0
+        },
+        "RELPOS": {
+            "f_statistic": 10.107678016432606,
+            "p_value": 3.9502518200388346e-08
+        }
+    },
+    "reservoir_analysis": {
+        "distribution": {
+            "ReservoirType.SANDSTONE": 997,
+            "ReservoirType.UNCONVENTIONAL": 659,
+            "ReservoirType.SHALE": 615,
+            "ReservoirType.TIGHT": 560,
+            "ReservoirType.CARBONATE": 401
+        },
+        "characteristics": {
+            "Facies": {
+                "ReservoirType.CARBONATE": 4.541147132169576,
+                "ReservoirType.SANDSTONE": 1.740220661985958,
+                "ReservoirType.SHALE": 3.0,
+                "ReservoirType.TIGHT": 6.175,
+                "ReservoirType.UNCONVENTIONAL": 8.244309559939301
+            },
+            "Depth": {
+                "ReservoirType.CARBONATE": 2916.1359102244387,
+                "ReservoirType.SANDSTONE": 2814.366599799398,
+                "ReservoirType.SHALE": 2875.241463414634,
+                "ReservoirType.TIGHT": 2898.18125,
+                "ReservoirType.UNCONVENTIONAL": 2925.8209408194234
+            },
+            "GR": {
+                "ReservoirType.CARBONATE": 75.09288528678304,
+                "ReservoirType.SANDSTONE": 71.97949949849549,
+                "ReservoirType.SHALE": 79.91508292682927,
+                "ReservoirType.TIGHT": 57.140051785714284,
+                "ReservoirType.UNCONVENTIONAL": 46.629427921092564
+            },
+            "ILD_log10": {
+                "ReservoirType.CARBONATE": 0.8005504373216958,
+                "ReservoirType.SANDSTONE": 0.5022266118014042,
+                "ReservoirType.SHALE": 0.5475039196585366,
+                "ReservoirType.TIGHT": 0.8112023940142857,
+                "ReservoirType.UNCONVENTIONAL": 0.704915545477997
+            },
+            "DeltaPHI": {
+                "ReservoirType.CARBONATE": 4.5815735660847885,
+                "ReservoirType.SANDSTONE": 4.841259779338014,
+                "ReservoirType.SHALE": 3.797479674796748,
+                "ReservoirType.TIGHT": 3.131923214285714,
+                "ReservoirType.UNCONVENTIONAL": 1.1403459787556904
+            },
+            "PHIND": {
+                "ReservoirType.CARBONATE": 10.29231421446384,
+                "ReservoirType.SANDSTONE": 15.092894684052157,
+                "ReservoirType.SHALE": 20.61969756097561,
+                "ReservoirType.TIGHT": 8.60436607142857,
+                "ReservoirType.UNCONVENTIONAL": 10.475496206373293
+            },
+            "PE": {
+                "ReservoirType.CARBONATE": 3.9066109725685783,
+                "ReservoirType.SANDSTONE": 3.136825476429288,
+                "ReservoirType.SHALE": 3.1323398373983737,
+                "ReservoirType.TIGHT": 4.1356375,
+                "ReservoirType.UNCONVENTIONAL": 4.70854779969651
+            },
+            "NM_M": {
+                "ReservoirType.CARBONATE": 1.9600997506234414,
+                "ReservoirType.SANDSTONE": 1.0060180541624875,
+                "ReservoirType.SHALE": 1.0260162601626017,
+                "ReservoirType.TIGHT": 1.9946428571428572,
+                "ReservoirType.UNCONVENTIONAL": 1.9817905918057663
+            },
+            "RELPOS": {
+                "ReservoirType.CARBONATE": 0.5132668329177057,
+                "ReservoirType.SANDSTONE": 0.4811063189568706,
+                "ReservoirType.SHALE": 0.5609788617886179,
+                "ReservoirType.TIGHT": 0.5124375,
+                "ReservoirType.UNCONVENTIONAL": 0.5525326251896813
+            }
+        },
+        "formations": {
+            "('ReservoirType.CARBONATE', 'A1 LM')": 137,
+            "('ReservoirType.CARBONATE', 'A1 SH')": 6,
+            "('ReservoirType.CARBONATE', 'B1 LM')": 14,
+            "('ReservoirType.CARBONATE', 'B1 SH')": 2,
+            "('ReservoirType.CARBONATE', 'B2 LM')": 4,
+            "('ReservoirType.CARBONATE', 'B2 SH')": 6,
+            "('ReservoirType.CARBONATE', 'B3 LM')": 4,
+            "('ReservoirType.CARBONATE', 'B4 LM')": 11,
+            "('ReservoirType.CARBONATE', 'B5 LM')": 14,
+            "('ReservoirType.CARBONATE', 'B5 SH')": 2,
+            "('ReservoirType.CARBONATE', 'C LM')": 201,
+            "('ReservoirType.SANDSTONE', 'A1 SH')": 253,
+            "('ReservoirType.SANDSTONE', 'B1 SH')": 170,
+            "('ReservoirType.SANDSTONE', 'B2 SH')": 113,
+            "('ReservoirType.SANDSTONE', 'B3 SH')": 153,
+            "('ReservoirType.SANDSTONE', 'B4 SH')": 193,
+            "('ReservoirType.SANDSTONE', 'B5 SH')": 8,
+            "('ReservoirType.SANDSTONE', 'C LM')": 3,
+            "('ReservoirType.SANDSTONE', 'C SH')": 104,
+            "('ReservoirType.SHALE', 'A1 LM')": 4,
+            "('ReservoirType.SHALE', 'A1 SH')": 76,
+            "('ReservoirType.SHALE', 'B1 SH')": 105,
+            "('ReservoirType.SHALE', 'B2 SH')": 55,
+            "('ReservoirType.SHALE', 'B3 SH')": 67,
+            "('ReservoirType.SHALE', 'B4 SH')": 24,
+            "('ReservoirType.SHALE', 'B5 SH')": 69,
+            "('ReservoirType.SHALE', 'C LM')": 14,
+            "('ReservoirType.SHALE', 'C SH')": 201,
+            "('ReservoirType.TIGHT', 'A1 LM')": 193,
+            "('ReservoirType.TIGHT', 'B1 LM')": 59,
+            "('ReservoirType.TIGHT', 'B2 LM')": 43,
+            "('ReservoirType.TIGHT', 'B2 SH')": 1,
+            "('ReservoirType.TIGHT', 'B3 LM')": 9,
+            "('ReservoirType.TIGHT', 'B4 LM')": 27,
+            "('ReservoirType.TIGHT', 'B5 LM')": 81,
+            "('ReservoirType.TIGHT', 'C LM')": 147,
+            "('ReservoirType.UNCONVENTIONAL', 'A1 LM')": 107,
+            "('ReservoirType.UNCONVENTIONAL', 'A1 SH')": 1,
+            "('ReservoirType.UNCONVENTIONAL', 'B1 LM')": 79,
+            "('ReservoirType.UNCONVENTIONAL', 'B2 LM')": 86,
+            "('ReservoirType.UNCONVENTIONAL', 'B3 LM')": 44,
+            "('ReservoirType.UNCONVENTIONAL', 'B4 LM')": 33,
+            "('ReservoirType.UNCONVENTIONAL', 'B5 LM')": 191,
+            "('ReservoirType.UNCONVENTIONAL', 'C LM')": 118
+        }
+    }
+}

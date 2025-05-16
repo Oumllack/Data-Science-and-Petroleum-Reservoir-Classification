@@ -1,0 +1,14 @@
+{
+    "nombre_echantillons": 9,
+    "qualite_donnees": {
+        "valeurs_manquantes": 0,
+        "valeurs_aberrantes": 204
+    },
+    "types_reservoirs": {
+        "ReservoirType.SANDSTONE": 997,
+        "ReservoirType.UNCONVENTIONAL": 659,
+        "ReservoirType.SHALE": 615,
+        "ReservoirType.TIGHT": 560,
+        "ReservoirType.CARBONATE": 401
+    }
+}
