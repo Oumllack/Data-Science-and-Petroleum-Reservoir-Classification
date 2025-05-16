@@ -98,7 +98,7 @@ The Random Forest model outperformed other algorithms with:
 - Robust performance across different reservoir types
 
 #### 3.2.2 Feature Importance Analysis
-![Feature Importance](results/advanced_analysis/feature_importance.png)
+![Feature Importance](results/model_results/Random Forest/feature_importance.png)
 *Figure 7: Relative importance of features in the Random Forest model*
 
 ### 3.3 Feature Importance
