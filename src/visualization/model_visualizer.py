@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Module pour la visualisation des résultats des modèles.
+Module for model results visualization.
 """
 
 import numpy as np
@@ -66,30 +66,30 @@ def visualize_model_results(results: Dict[str, Any], output_dir: str) -> None:
 
 def plot_confusion_matrix(conf_matrix: np.ndarray, model_name: str, output_path: Path) -> None:
     """
-    Trace la matrice de confusion.
+    Plot the confusion matrix.
     
     Args:
-        conf_matrix (np.ndarray): Matrice de confusion
-        model_name (str): Nom du modèle
-        output_path (Path): Chemin de sauvegarde du graphique
+        conf_matrix (np.ndarray): Confusion matrix
+        model_name (str): Model name
+        output_path (Path): Path to save the plot
     """
     plt.figure(figsize=(10, 8))
     sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues')
-    plt.title(f'Matrice de confusion - {model_name}')
-    plt.xlabel('Prédictions')
-    plt.ylabel('Valeurs réelles')
+    plt.title(f'Confusion Matrix - {model_name}')
+    plt.xlabel('Predicted')
+    plt.ylabel('Actual')
     plt.tight_layout()
     plt.savefig(output_path, bbox_inches='tight', dpi=300)
     plt.close()
 
 def plot_roc_curves(roc_data: Dict[str, Dict[str, np.ndarray]], model_name: str, output_path: Path) -> None:
     """
-    Trace les courbes ROC pour chaque classe.
+    Plot ROC curves for each class.
     
     Args:
-        roc_data (Dict[str, Dict[str, np.ndarray]]): Données ROC pour chaque classe
-        model_name (str): Nom du modèle
-        output_path (Path): Chemin de sauvegarde du graphique
+        roc_data (Dict[str, Dict[str, np.ndarray]]): ROC data for each class
+        model_name (str): Model name
+        output_path (Path): Path to save the plot
     """
     plt.figure(figsize=(10, 8))
     
@@ -97,15 +97,15 @@ def plot_roc_curves(roc_data: Dict[str, Dict[str, np.ndarray]], model_name: str,
         plt.plot(
             data['fpr'],
             data['tpr'],
-            label=f'Classe {class_name} (AUC = {data["auc"]:.3f})'
+            label=f'Class {class_name} (AUC = {data["auc"]:.3f})'
         )
     
     plt.plot([0, 1], [0, 1], 'k--')
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
-    plt.xlabel('Taux de faux positifs')
-    plt.ylabel('Taux de vrais positifs')
-    plt.title(f'Courbes ROC - {model_name}')
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title(f'ROC Curves - {model_name}')
     plt.legend(loc="lower right")
     plt.grid(True)
     plt.tight_layout()
@@ -114,55 +114,75 @@ def plot_roc_curves(roc_data: Dict[str, Dict[str, np.ndarray]], model_name: str,
 
 def plot_feature_importance(importance: np.ndarray, feature_names: np.ndarray, output_path: Path) -> None:
     """
-    Trace l'importance des caractéristiques.
+    Plot feature importance.
     
     Args:
-        importance (np.ndarray): Importance des caractéristiques
-        feature_names (np.ndarray): Noms des caractéristiques
-        output_path (Path): Chemin de sauvegarde du graphique
+        importance (np.ndarray): Feature importance values
+        feature_names (np.ndarray): Feature names
+        output_path (Path): Path to save the plot
     """
+    feature_name_map = {
+        'GR': 'Gamma Ray',
+        'ILD_log10': 'Deep Resistivity',
+        'DeltaPHI': 'Delta Porosity',
+        'PHIND': 'Neutron Porosity',
+        'PE': 'Photoelectric Effect',
+        'NM_M': 'Nonmarine/Marine Indicator',
+        'RELPOS': 'Relative Position'
+    }
+    
     plt.figure(figsize=(10, 6))
     importance_df = pd.DataFrame({
-        'Feature': feature_names,
+        'Feature': [feature_name_map.get(f, f) for f in feature_names],
         'Importance': importance
     }).sort_values('Importance', ascending=False)
     
     sns.barplot(data=importance_df, x='Importance', y='Feature')
-    plt.title('Importance des caractéristiques')
+    plt.title('Feature Importance')
+    plt.xlabel('Relative Importance')
+    plt.ylabel('Feature')
     plt.tight_layout()
     plt.savefig(output_path, bbox_inches='tight', dpi=300)
     plt.close()
 
 def plot_model_comparison(results: Dict[str, Any], output_path: Path) -> None:
     """
-    Trace la comparaison des performances des modèles.
+    Plot model performance comparison.
     
     Args:
-        results (Dict[str, Any]): Résultats d'évaluation des modèles
-        output_path (Path): Chemin de sauvegarde du graphique
+        results (Dict[str, Any]): Model evaluation results
+        output_path (Path): Path to save the plot
     """
-    # Préparation des données
+    # Prepare data
     metrics = ['accuracy', 'precision', 'recall', 'f1']
+    metric_names = {
+        'accuracy': 'Accuracy',
+        'precision': 'Precision',
+        'recall': 'Recall',
+        'f1': 'F1-Score'
+    }
     model_names = list(results.keys())
     
-    # Création du DataFrame pour la visualisation
+    # Create DataFrame for visualization
     comparison_data = []
     for model_name in model_names:
         for metric in metrics:
             comparison_data.append({
                 'Model': model_name,
-                'Metric': metric,
+                'Metric': metric_names[metric],
                 'Value': results[model_name]['metrics'][metric]
             })
     
     comparison_df = pd.DataFrame(comparison_data)
     
-    # Création du graphique
+    # Create plot
     plt.figure(figsize=(12, 6))
     sns.barplot(data=comparison_df, x='Model', y='Value', hue='Metric')
-    plt.title('Comparaison des performances des modèles')
+    plt.title('Model Performance Comparison')
+    plt.xlabel('Model')
+    plt.ylabel('Score')
     plt.xticks(rotation=45)
-    plt.legend(title='Métrique', bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.legend(title='Metric', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
     plt.savefig(output_path, bbox_inches='tight', dpi=300)
     plt.close() 
