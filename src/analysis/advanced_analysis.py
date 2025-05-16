@@ -140,29 +140,29 @@ def generate_advanced_visualizations(results: Dict, output_path: Path) -> None:
 
 def plot_pca_visualization(pca_results: Dict, output_path: Path) -> None:
     """
-    Trace les visualisations PCA.
+    Plot PCA visualizations.
     """
     import matplotlib.pyplot as plt
     import seaborn as sns
     
-    # Variance expliquée
+    # Explained variance
     plt.figure(figsize=(12, 5))
     
-    # Variance individuelle
+    # Individual variance
     plt.subplot(1, 2, 1)
     plt.bar(range(1, len(pca_results['standard']['explained_variance_ratio']) + 1),
             pca_results['standard']['explained_variance_ratio'])
-    plt.title('Variance Expliquée par Composante')
-    plt.xlabel('Composante')
-    plt.ylabel('Variance Expliquée')
+    plt.title('Explained Variance by Component')
+    plt.xlabel('Component')
+    plt.ylabel('Explained Variance')
     
-    # Variance cumulée
+    # Cumulative variance
     plt.subplot(1, 2, 2)
     plt.plot(range(1, len(pca_results['standard']['cumulative_variance']) + 1),
              pca_results['standard']['cumulative_variance'], 'bo-')
-    plt.title('Variance Cumulée')
-    plt.xlabel('Nombre de Composantes')
-    plt.ylabel('Variance Cumulée')
+    plt.title('Cumulative Variance')
+    plt.xlabel('Number of Components')
+    plt.ylabel('Cumulative Variance')
     
     plt.tight_layout()
     plt.savefig(output_path / 'pca_analysis.png', dpi=300, bbox_inches='tight')
@@ -170,7 +170,7 @@ def plot_pca_visualization(pca_results: Dict, output_path: Path) -> None:
 
 def plot_tsne_visualization(tsne_results: Dict, output_path: Path) -> None:
     """
-    Trace les visualisations t-SNE.
+    Plot t-SNE visualizations.
     """
     import matplotlib.pyplot as plt
     import seaborn as sns
@@ -182,7 +182,9 @@ def plot_tsne_visualization(tsne_results: Dict, output_path: Path) -> None:
     for ax, (perplexity, results) in zip(axes, tsne_results.items()):
         data = np.array(results['transformed_data'])
         sns.scatterplot(x=data[:, 0], y=data[:, 1], ax=ax)
-        ax.set_title(f't-SNE (Perplexité = {perplexity.split("_")[1]})')
+        ax.set_title(f't-SNE (Perplexity = {perplexity.split("_")[1]})')
+        ax.set_xlabel('t-SNE 1')
+        ax.set_ylabel('t-SNE 2')
     
     plt.tight_layout()
     plt.savefig(output_path / 'tsne_analysis.png', dpi=300, bbox_inches='tight')
@@ -190,7 +192,7 @@ def plot_tsne_visualization(tsne_results: Dict, output_path: Path) -> None:
 
 def plot_clustering_visualization(clustering_results: Dict, output_path: Path) -> None:
     """
-    Trace les visualisations de clustering.
+    Plot clustering visualizations.
     """
     import matplotlib.pyplot as plt
     import seaborn as sns
@@ -198,26 +200,26 @@ def plot_clustering_visualization(clustering_results: Dict, output_path: Path) -
     # K-means
     plt.figure(figsize=(12, 5))
     
-    # Scores de silhouette
+    # Silhouette scores
     plt.subplot(1, 2, 1)
     kmeans_scores = {
         k: v['silhouette_score']
         for k, v in clustering_results['kmeans'].items()
     }
     plt.bar(kmeans_scores.keys(), kmeans_scores.values())
-    plt.title('Scores de Silhouette - K-means')
-    plt.xlabel('Nombre de Clusters')
-    plt.ylabel('Score de Silhouette')
+    plt.title('Silhouette Scores - K-means')
+    plt.xlabel('Number of Clusters')
+    plt.ylabel('Silhouette Score')
     
-    # BIC pour GMM
+    # BIC for GMM
     plt.subplot(1, 2, 2)
     gmm_scores = {
         k: v['bic']
         for k, v in clustering_results['gmm'].items()
     }
     plt.plot(gmm_scores.keys(), gmm_scores.values(), 'bo-')
-    plt.title('Critère BIC - GMM')
-    plt.xlabel('Nombre de Composantes')
+    plt.title('BIC Criterion - GMM')
+    plt.xlabel('Number of Components')
     plt.ylabel('BIC')
     
     plt.tight_layout()
@@ -226,29 +228,29 @@ def plot_clustering_visualization(clustering_results: Dict, output_path: Path) -
 
 def plot_pattern_visualization(patterns: Dict, output_path: Path) -> None:
     """
-    Trace les visualisations des motifs.
+    Plot pattern visualizations.
     """
     import matplotlib.pyplot as plt
     import seaborn as sns
     
     plt.figure(figsize=(15, 6))
     
-    # Top 10 des séquences
+    # Top 10 sequences
     plt.subplot(1, 2, 1)
     top_sequences = dict(list(patterns['sequence_patterns'].items())[:10])
     plt.bar(top_sequences.keys(), top_sequences.values())
-    plt.title('Top 10 des Séquences de Types de Réservoirs')
-    plt.xlabel('Séquence')
-    plt.ylabel('Fréquence')
+    plt.title('Top 10 Reservoir Type Sequences')
+    plt.xlabel('Sequence')
+    plt.ylabel('Frequency')
     plt.xticks(rotation=45)
     
-    # Top 10 des transitions
+    # Top 10 transitions
     plt.subplot(1, 2, 2)
     top_transitions = dict(list(patterns['transitions'].items())[:10])
     plt.bar(top_transitions.keys(), top_transitions.values())
-    plt.title('Top 10 des Transitions entre Types de Réservoirs')
+    plt.title('Top 10 Reservoir Type Transitions')
     plt.xlabel('Transition')
-    plt.ylabel('Fréquence')
+    plt.ylabel('Frequency')
     plt.xticks(rotation=45)
     
     plt.tight_layout()
