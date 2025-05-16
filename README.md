@@ -101,15 +101,29 @@ The Random Forest model outperformed other algorithms with:
 ![Feature Importance](results/model_results/Random Forest/feature_importance.png)
 *Figure 7: Relative importance of features in the Random Forest model*
 
-### 3.3 Feature Importance
-[Insert feature importance plots from results/advanced_analysis/]
+### 3.3 Advanced Analysis
 
-Top influential features:
-1. Porosity (relative importance: 0.28)
-2. Permeability (relative importance: 0.25)
-3. Oil Saturation (relative importance: 0.20)
-4. Formation Depth (relative importance: 0.15)
-5. Pressure Gradient (relative importance: 0.12)
+#### 3.3.1 PCA Analysis
+![PCA Analysis](results/advanced_analysis/visualizations/pca_analysis.png)
+*Figure 8: Principal Component Analysis showing variance explained by components*
+
+#### 3.3.2 t-SNE Analysis
+![t-SNE Analysis](results/advanced_analysis/visualizations/tsne_analysis.png)
+*Figure 9: t-SNE visualization with different perplexity values*
+
+#### 3.3.3 Clustering Analysis
+![Clustering Analysis](results/advanced_analysis/visualizations/clustering_analysis.png)
+*Figure 10: Clustering analysis showing silhouette scores and BIC values*
+
+#### 3.3.4 Pattern Analysis
+![Pattern Analysis](results/advanced_analysis/visualizations/pattern_analysis.png)
+*Figure 11: Analysis of reservoir type patterns and transitions*
+
+Key findings from advanced analysis:
+1. PCA reveals that the first two components explain 68.11% of the total variance
+2. t-SNE shows clear separation between different reservoir types
+3. Clustering analysis suggests optimal number of clusters
+4. Pattern analysis reveals common sequences in reservoir types
 
 ## 4. Discussion
 
