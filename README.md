@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This study presents a comprehensive analysis of petroleum reservoir classification using advanced machine learning techniques. We analyze geological characteristics including porosity, permeability, and oi saturation to develop an accurate classification model for reservoir types. Our approach combines traditional geological analysis with modern data science methods to provide actionable insights for reservoir management and extraction optimization.
+This study presents a comprehensive analysis of petroleum reservoir classification using advanced machine learning techniques. We analyze geological characteristics including porosity, permeability, and oil saturation to develop an accurate classification model for reservoir types. Our approach combines traditional geological analysis with modern data science methods to provide actionable insights for reservoir management and extraction optimization.
 
 ## 1. Introduction
 
